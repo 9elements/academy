@@ -49,4 +49,4 @@ A great example for languages that embrace immutable data structures is closure 
 
 # Validate & Normalize at the boundaries
 
-@TODO: Needs review
+Always validate your user input. But where do you want such kind of code? In your models? No - you probably don't want to sprinkle your precious model code with verbose sanity checks. This is why you have to identify your boundaries where user input hits your model code. In Rails this is what strong parameters is all about. The params are the boundaries.
