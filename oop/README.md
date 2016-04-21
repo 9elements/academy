@@ -30,3 +30,23 @@ But in typed language try to minimize the interface that a class is using. A goo
 The Dependency Inversion Principle has to do with high-level (think business logic) objects not depending on low-level (think database querying and IO) implementation details.
 
 [Thoughtbot](https://robots.thoughtbot.com/back-to-basics-solid)
+
+# Command Query Separation
+
+A method should either be a command (mutate state or object) or a query (read only). Try to never mix both.
+
+# Composition vs. Inheritance
+
+Only use inheritance when you have real abstractions. Sometimes inheritance is used to hide shared code but you're violating the SRP. Prefer composition over inheritance for these cases.
+
+[Good Read](https://www.thoughtworks.com/de/insights/blog/composition-vs-inheritance-how-choose)
+
+# Mutable vs. Immutable Datastructures
+
+In most programming languages we used we have mutable datastructures. Mutating data can be very error prone (a thread is fucking up the data while another thread is needing it).
+
+A great example for languages that embrace immutable data structures is closure (that use software transactional memory) or elm.
+
+# Validate & Normalize at the boundaries
+
+@TODO: Needs review
