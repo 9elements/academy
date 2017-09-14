@@ -12,6 +12,7 @@ While Rails has served well for smaller web projects the architecture comes to i
 - Frontend editing concerns creep into models
 - (Over)use of Callbacks, especially in models
 - Too big helpers; Too many helpers
+- Application Logic spreads over the Rails app
 
 You know the game. When you start developing your web application you might have some logic that won’t fit in the model since it heavily deals with the presentation (HTML & CSS). The classic Rails way is to put this logic in a helper method (that can be directly used within a view). In our experience this is a code smell since these helpers will have a lot of concerns - they also will grow beyond manageability and testability. They will also spread a lot of application logic over a lot of places.
 
