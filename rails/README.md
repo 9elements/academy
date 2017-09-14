@@ -6,12 +6,12 @@ Work in progress
 
 While Rails has served well for smaller web projects the architecture comes to its limits when applications are growing. We identified the following problems while developing a large scale Rails application:
 
-Helpers grew beyond manageability; no real vertical separability; (Business) Logic in views
-Too much logic in models
-Controllers tend to do much, way too much. Same applies to rake tasks!
-Frontend editing concerns creep into models
-(Over)use of Callbacks, especially in models
-Too big helpers; Too many helpers
+- Helpers grew beyond manageability; no real vertical separability; (Business) Logic in views
+- Too much logic in models
+- Controllers tend to do much, way too much. Same applies to rake tasks!
+- Frontend editing concerns creep into models
+- (Over)use of Callbacks, especially in models
+- Too big helpers; Too many helpers
 
 You know the game. When you start developing your web application you might have some logic that won’t fit in the model since it heavily deals with the presentation (HTML & CSS). The classic Rails way is to put this logic in a helper method (that can be directly used within a view). In our experience this is a code smell since these helpers will have a lot of concerns - they also will grow beyond manageability and testability. They will also spread a lot of application logic over a lot of places.
 
