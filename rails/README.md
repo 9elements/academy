@@ -4,7 +4,7 @@ Work in progress
 
 ## Motivation
 
-While Rails has served well for smaller web projects the architecture comes to its limits when applications are growing. We identified the following problems while developing a large scale Rails application:
+While Rails has served us well for smaller web projects, the architecture comes to its limits when applications are growing. We identified the following problems while developing large scale Rails applications:
 
 - Helpers grew beyond manageability; no real vertical separability; (Business) Logic in views
 - Too much logic in models
