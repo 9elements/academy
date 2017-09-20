@@ -1,4 +1,4 @@
-### Business logic that should have located in a model or service
+# Business logic that should have located in a model or service
 
 Imagine this controller action (it is somewhat simplified - but you'll get the point). The user wants to buy a product that costs $100 and we're leveraging the 3rd party service Stripe to process the payment. The Stripe service is also internally managing customers and we would like to have a mapping between these two (we don't want to create another customer in Stripe for a repurchase - we want to assign multiple purchases to the same customer). To implement this behaviour we have to store the `stripe_customer_id` in the `User` object when we create the Stripe customer so that we can reference it later.
 
@@ -126,7 +126,7 @@ class StripeService
     @user.stripe_customer_id
   end
 
-  def create_charge(stripe_customer_id)
+  def create_charge
     stripe_charge = Stripe::Charge.create(
       amount: 100,
       currency: "usd",
@@ -140,10 +140,15 @@ class PaymentController < ApplicationController
   def create
     @user = current_user
     stripe_service = StripeService.new(@user)
-    stripe_customer_id = stripe_service.stripe_customer_id
-    @stripe_charge = stripe_service.create_charge(stripe_customer_id)
+    @stripe_charge = stripe_service.create_charge
   end
 end
 ```
 
 Now the controller operates on a single level of abstractions instead of jumping around between high level and low level code.
+
+## Further Refactorings
+
+The StripeService has two concerns, the first one is to create a Stripe customer and the second one is to create a charge. This could be refactored into a StripeCreateUserService and StripeCreateCharge service.
+
+Also the @stripe_charge is leaking into the view. If you want to switch to a different payment processor you'll need to refactor the view too. To fix that we could introduce a PaymentService that uses the StripeCreateUserService and the StripeCreateCharge to communicate with Stripe. The result should be abstracted in a ValueObject and this should be passed to the view. With that refactoring you could swap out the payment processor without touching model, controller or view.
