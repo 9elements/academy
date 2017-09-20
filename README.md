@@ -7,7 +7,7 @@ Please take a look at the folders:
   - OOP
   - Design Patterns
   - Ruby
-  - Rails
+  - [Rails](rails)
   - JavaScript
   - Testing
   - Git
