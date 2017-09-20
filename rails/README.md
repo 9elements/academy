@@ -11,6 +11,7 @@ While Rails has served us well for smaller web projects, the architecture comes 
 - Controllers tend to do much, way too much. Same applies to rake tasks!
   - [Params Envy](fat-controllers-params-envy.md)
   - [Business logic that should have located in a model or service](fat-controllers-business-logic.md)
+  - Unneeded coupling to views or in other words: too many instance variables
 - Frontend editing concerns creep into models
 - (Over)use of Callbacks, especially in models
 - Too big helpers; Too many helpers

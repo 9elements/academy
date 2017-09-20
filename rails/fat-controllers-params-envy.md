@@ -1,14 +1,4 @@
-# Controllers tend to do much, way too much
-
-In our history we've seen many reasons why controllers got too big and difficult to maintain:
-
-- Params Envy, or with other words form logic leaks into the controller
-- Business logic that should have located in a model or service
-- unneeded coupling to views (too many instance variables)
-
-Let's shed some light on the different problems:
-
-## Params Envy
+# Params Envy
 
 ```ruby
 def index
