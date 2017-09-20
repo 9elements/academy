@@ -149,6 +149,6 @@ Now the controller operates on a single level of abstractions instead of jumping
 
 ## Further Refactorings
 
-The StripeService has two concerns, the first one is to create a Stripe customer and the second one is to create a charge. This could be refactored into a StripeCreateUserService and StripeCreateCharge service.
+The `StripeService` has two concerns, the first one is to create a Stripe customer and the second one is to create a charge. This could be refactored into a `StripeCreateUserService` and `StripeCreateCharge` service.
 
-Also the @stripe_charge is leaking into the view. If you want to switch to a different payment processor you'll need to refactor the view too. To fix that we could introduce a PaymentService that uses the StripeCreateUserService and the StripeCreateCharge to communicate with Stripe. The result should be abstracted in a ValueObject and this should be passed to the view. With that refactoring you could swap out the payment processor without touching model, controller or view.
+Also the `@stripe_charge` is passed into the view - so the view needs to know how to deal with Stripe responses. If you want to switch to a different payment processor you'll need to refactor the view too. To fix that we could introduce a `PaymentService` that uses the `StripeCreateUserService` and the `StripeCreateCharge` to communicate with Stripe. The result should be abstracted in a [ValueObject](https://medium.com/@franzejr/value-object-in-ruby-89b5e3b6b5f9) and this should be passed to the view. With that refactoring you could swap out the payment processor without touching model, controller or view.
