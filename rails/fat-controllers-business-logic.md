@@ -32,10 +32,10 @@ end
 
 There are two things that are wrong with this code:
 
-  * The logic of referencing the stripe customer id with the user has leaked into the controller action
-  * There is some high level and some low level stuff that we're doing in the controller action
+- The logic of referencing the stripe customer id with the user has _leaked_ into the controller action
+- There is some _high level_ and some _low level_ stuff that we're doing in the controller action
 
-The naive refactoring would be to move that logic in the User model:
+Let's deal with the first problem first. The naive refactoring would be to move that logic in the User model:
 
 ```ruby
 class User < ApplicationRecord
