@@ -1,6 +1,6 @@
 ### Business logic that should have located in a model or service
 
-Imagine this controller action. The user wants to buy a product that costs $100. We're leveraging the 3rd party service stripe to process a payment. Since stripe is also managing customers we will need to assign our user a stripe customer id (we don't want to create another customer in stripe for a repurchase). In this case the logic for retrieving a stripe customer id leaked into the controller:
+Imagine this controller action (it is somewhat simplified - but you'll get the point). The user wants to buy a product that costs $100 and we're leveraging the 3rd party service Stripe to process the payment. The Stripe service is also internally managing customers and we would like to have a mapping between these two (we don't want to create another customer in Stripe for a repurchase - we want to assign multiple purchases to the same customer). To implement this behaviour we have to store the `stripe_customer_id` in the `User` object when we create the Stripe customer so that we can reference it later.
 
 ```ruby
 class PaymentController < ApplicationController
@@ -29,6 +29,11 @@ class PaymentController < ApplicationController
   end
 end
 ```
+
+There are two things that are wrong with this code:
+
+  * The logic of referencing the stripe customer id with the user has leaked into the controller action
+  * There is some high level and some low level stuff that we're doing in the controller action
 
 The naive refactoring would be to move that logic in the User model:
 
