@@ -37,7 +37,7 @@ end
 * Rails rookies often forget to reload the collection - this is error prone.
 * Selecting a todo means N+1 operations on the database table.
 
-## The smart way
+## The smartass way
 
 Let's say you don't care much about the order of your todos then you could declare the current todo as the latest todo that you've created / touched.
 
@@ -67,4 +67,5 @@ end
 
 ### Cons
 
-* Sometimes wierd behavior, e.g. when a rake task also changes updated_at
+* Sometimes wierd behavior, e.g. when a rake task also changes updated_at.
+* If you want to sort by a second field you're screwed.
