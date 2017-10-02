@@ -4,3 +4,4 @@ This chapter mostly deals with relational database design. We will mainly look i
 
 - [Modeling a current / active item in a collection](modeling-current-item-in-collection.md)
 
+For more recipes you should check out Chad Fowlers excellent [Rails Recipes](https://pragprog.com/book/rr2/rails-recipes).
