@@ -19,3 +19,5 @@ Please take a look at the folders:
   - SEO
   - Marketing
   - Databases
+  - [Database Design](database-design)
+
