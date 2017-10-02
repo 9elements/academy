@@ -36,6 +36,7 @@ end
 * No application mechanism protects you from creating invalid data (e.g. two items with `current` set to `true`).
 * Rails rookies often forget to reload the collection - this is error prone.
 * Selecting a todo means N+1 operations on the database table.
+* You'll be not very flexible for future features (e.g. multiple current todos).
 
 ## The smartass way
 
@@ -69,3 +70,45 @@ end
 
 * Sometimes wierd behavior, e.g. when a rake task also changes updated_at.
 * If you want to sort by a second field you're screwed.
+* You'll be not very flexible for future features (e.g. multiple current todos).
+
+## The best practice
+
+The best practice is to model the current todo in the `User`. You would have to add a `current_todo_id` to the `User` model and create convenience functions to access them:
+
+```ruby
+class User < ApplicationRecord
+  has_many :todos
+
+  def current_todo
+    Todo.find(current_todo_id)
+  end
+
+  def current_todo=(todo)
+    current_todo_id = todo.id
+  end
+end
+```
+
+if you want to select another todo you'll use the convenience functions:
+
+```ruby
+class TodosController < ApplicationController
+  def select
+    todo = Todo.find(params[:id])
+    current_user.current_todo = todo
+    current_user.save
+    ...
+  end
+end
+```
+
+### Pros
+
+* Very simple implementation.
+* Very fast (just one database update).
+* You barely able to create inconsistent state.
+
+### Cons
+
+* You'll be not very flexible for future features (e.g. multiple current todos).
