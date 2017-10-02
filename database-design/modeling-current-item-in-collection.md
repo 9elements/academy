@@ -78,7 +78,7 @@ The best practice is to model the current todo in the `User`. You would have to 
 
 ```ruby
 class User < ApplicationRecord
-  has_many :todos
+  has_many :todos, dependent: :destroy
 
   def current_todo
     Todo.find(current_todo_id)
@@ -112,3 +112,33 @@ end
 ### Cons
 
 * You'll be not very flexible for future features (e.g. multiple current todos).
+
+## The flexible way
+
+You could create a join model (@TODO: use through) to implement the feature:
+
+```ruby
+class User < ApplicationRecord
+  has_many :todos, dependent: :destroy
+  has_many :current_todos, dependent: :destroy
+end
+
+class Todos < ApplicationRecord
+  belongs_to :user
+  has_many :current_todos, dependent: :destroy
+end
+
+class CurrentTodo < ApplicationRecord
+  belongs_to :user
+  belongs_to :todo
+end
+```
+
+### Pros
+
+* You'll be open for future features (e.g. multiple current todos).
+* You'll be able to even attach more data to a current todo.
+
+### Cons
+
+* You'll need a complex N..M relation.
