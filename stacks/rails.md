@@ -8,6 +8,10 @@ Developing web applications is standing on the shoulders of giants. We use many 
 - [SASS / SCSS](http://sass-lang.com/) as a preprocessor for CSS.
 - [Webpacker](https://github.com/rails/webpacker) for saner ES6/npm integration.
 
+## Form Models
+
+- [OffTheRecord](https://gitlab.9elements.com/9elements/off_the_record) Validation without persistence.
+
 ## File uploading and Image Processing
 
 - [Carriewave](https://github.com/carrierwaveuploader/carrierwave) for file uploading and image processing.
@@ -35,7 +39,7 @@ Developing web applications is standing on the shoulders of giants. We use many 
 
 - [RSpec](http://rspec.info/) Behaviour Driven
 Development for Ruby.
-- [capybara](https://github.com/teamcapybara/capybara)
+- [capybara](https://github.com/teamcapybara/capybara) Acceptance test framework for web applications.
 - [simplecov](https://github.com/colszowka/simplecov) for Code Coverage.
 - [factory girl](https://github.com/thoughtbot/factory_girl) for creating fixtures.
 - [vcr](https://github.com/vcr/vcr) for mocking 3rd party API requests.
@@ -43,7 +47,7 @@ Development for Ruby.
 # Developer Tools
 
 - [Pry Rails](https://github.com/rweng/pry-rails) is an IRB alternative and runtime developer console.
-- [Pry Byebu](https://github.com/deivid-rodriguez/pry-byebug)Step-by-step debugging and stack navigation in Pry.
+- [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug)Step-by-step debugging and stack navigation in Pry.
 - [Pry Stack Explorer](https://github.com/pry/pry-stack_explorer) Walk the stack in a Pry session.
 - [Letter Opener](https://github.com/ryanb/letter_opener) and [Letter Opener Web](https://github.com/fgrehm/letter_opener_web) for testing email responses.
 - [NewRelic](https://newrelic.com/) Performance and exception tracking.
