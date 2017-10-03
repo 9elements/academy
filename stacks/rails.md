@@ -1,5 +1,7 @@
 # Rails
 
+Developing web applications is standing on the shoulders of giants. We use many open source libraries to get specific tasks done. This is only a short list of the - if you need something larger feel free to look at the [Awesome Rails Gem] list.(https://github.com/hothero/awesome-rails-gem)
+
 ## Views
 
 - [HAML](http://haml.info/) for writing valid HTML pages.
