@@ -32,13 +32,13 @@ Development for Ruby.
 
 # Developer Tools
 
-- (Pry Rails)[https://github.com/rweng/pry-rails] is an IRB alternative and runtime developer console.
-- (Pry Byebug)[https://github.com/deivid-rodriguez/pry-byebug] Step-by-step debugging and stack navigation in Pry.
-- (Pry Stack Explorer)[https://github.com/pry/pry-stack_explorer] Walk the stack in a Pry session.
+- [Pry Rails](https://github.com/rweng/pry-rails) is an IRB alternative and runtime developer console.
+- [Pry Byebu](https://github.com/deivid-rodriguez/pry-byebug)Step-by-step debugging and stack navigation in Pry.
+- [Pry Stack Explorer](https://github.com/pry/pry-stack_explorer) Walk the stack in a Pry session.
 
 # Ruby Linting
 
-- (rubocop)[https://github.com/bbatsov/rubocop] for keeping code standards consistent accross a larger team.
+- [rubocop](https://github.com/bbatsov/rubocop) for keeping code standards consistent accross a larger team.
 
 Please also look at our Rails extended architecture guides.
 
