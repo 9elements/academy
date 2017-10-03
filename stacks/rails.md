@@ -70,8 +70,6 @@ Development for Ruby.
 
 - [rubocop](https://github.com/bbatsov/rubocop) for keeping code standards consistent accross a larger team.
 
-Please also look at our Rails extended architecture guides.
-
 # Admin
 
 - [Rails Admin](https://github.com/sferik/rails_admin) for low budget clients who need a machine room.
@@ -82,3 +80,5 @@ Please also look at our Rails extended architecture guides.
 - [Fontawesome Rails](https://github.com/bokmann/font-awesome-rails) More Icon Fonts (you will just want one of these font libs)
 - [Foundation Rails](https://rubygems.org/gems/foundation-rails) CSS Framework
 - [Twitter Bootstrap](https://github.com/seyhunak/twitter-bootstrap-rails) Twitter Bootstrap for Rails
+
+Please also look at our [Rails extended architecture](/rails) guides.
