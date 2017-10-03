@@ -23,6 +23,14 @@ Developing web applications is standing on the shoulders of giants. We use many 
 - [Elastic Search](https://github.com/elastic/elasticsearch-rails) for communicating with an elastic search database.
 - [Elastic Search Model](https://github.com/elastic/elasticsearch-rails/tree/master/elasticsearch-model) for keeping models in sync between a relational database and elastic search.
 
+## Authentication
+
+- [Sorcery](https://github.com/Sorcery/sorcery) for a lightweight authentication library.
+- [Devise](https://github.com/plataformatec/devise) a more heavyweight authentication library.
+- [OmniAuth](https://github.com/omniauth/omniauth) a OAuth 2 authentication framework (for FB or Twitter).
+- [CanCanCan](https://github.com/CanCanCommunity/cancancan) for permission management.
+- [JSON Web Token](https://jwt.io/) for authenticating against an API or signing messages.
+
 ## Testing
 
 - [RSpec](http://rspec.info/) Behaviour Driven
@@ -37,6 +45,16 @@ Development for Ruby.
 - [Pry Rails](https://github.com/rweng/pry-rails) is an IRB alternative and runtime developer console.
 - [Pry Byebu](https://github.com/deivid-rodriguez/pry-byebug)Step-by-step debugging and stack navigation in Pry.
 - [Pry Stack Explorer](https://github.com/pry/pry-stack_explorer) Walk the stack in a Pry session.
+- [Letter Opener](https://github.com/ryanb/letter_opener) and [Letter Opener Web](https://github.com/fgrehm/letter_opener_web) for testing email responses.
+- [NewRelic](https://newrelic.com/) Performance and exception tracking.
+
+# API Client
+
+- [Httparty](https://github.com/jnunemaker/httparty) for consuming APIs.
+
+# Deployment
+
+- [Capistrano](http://capistranorb.com/) for deployment.
 
 # Ruby Linting
 
