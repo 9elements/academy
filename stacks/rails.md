@@ -20,6 +20,7 @@ Developing web applications is standing on the shoulders of giants. We use many 
 ## Background Processing
 
 - [Sidekiq](https://github.com/mperham/sidekiq) for everything long running that can't be done in a controller action.
+- [Whenever](https://github.com/javan/whenever) for kicking off regular jobs at intervals through CRON
 
 
 ## Full Text Search
