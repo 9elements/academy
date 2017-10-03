@@ -43,6 +43,7 @@ Development for Ruby.
 - [capybara](https://github.com/teamcapybara/capybara) Acceptance test framework for web applications.
 - [simplecov](https://github.com/colszowka/simplecov) for Code Coverage.
 - [factory girl](https://github.com/thoughtbot/factory_girl) for creating fixtures.
+- [faker](https://github.com/stympy/faker) for faking seeds.
 - [vcr](https://github.com/vcr/vcr) for mocking 3rd party API requests.
 
 # Developer Tools
@@ -52,6 +53,10 @@ Development for Ruby.
 - [Pry Stack Explorer](https://github.com/pry/pry-stack_explorer) Walk the stack in a Pry session.
 - [Letter Opener](https://github.com/ryanb/letter_opener) and [Letter Opener Web](https://github.com/fgrehm/letter_opener_web) for testing email responses.
 - [NewRelic](https://newrelic.com/) Performance and exception tracking.
+
+# API Server
+
+- [Rack Cors](https://github.com/cyu/rack-cors) for setting cors header.
 
 # API Client
 
@@ -67,3 +72,13 @@ Development for Ruby.
 
 Please also look at our Rails extended architecture guides.
 
+# Admin
+
+- [Rails Admin](https://github.com/sferik/rails_admin) for low budget clients who need a machine room.
+
+# Frontend Libraries
+
+- [Fontello](https://github.com/fontello/fontello) Icon Fonts
+- [Fontawesome Rails](https://github.com/bokmann/font-awesome-rails) More Icon Fonts (you will just want one of these font libs)
+- [Foundation Rails](https://rubygems.org/gems/foundation-rails) CSS Framework
+- [Twitter Bootstrap](https://github.com/seyhunak/twitter-bootstrap-rails) Twitter Bootstrap for Rails
