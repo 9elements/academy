@@ -2,6 +2,11 @@
 
 Imagine you have a `Todos` table and it's managing todos (how thrilling). Now you want to implement the feature that you can display at the task that you currently working on. You have several options to model that in the database:
 
+* [The naive way](#The-naive-way)
+* [The smartass way](#The-smartass-way)
+* [The best practice (in 98% of all cases this is what you want)](#the-best-practice)
+* [The flexible way](#the-flexible-way)
+
 ## The naive way
 
 Intuitively you might want to add a `current boolean` field to your `Todo` model. The mechanic to select a new current todo would be to:
