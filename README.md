@@ -20,4 +20,5 @@ Please take a look at the folders:
   - Marketing
   - Databases
   - [Database Design](database-design)
+  - [Stacks](stacks)
 
