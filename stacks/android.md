@@ -1,27 +1,29 @@
+# Android
+
 These are the Android Libraries we're using at 9elements:
 
-# Dependency Injection
+## Dependency Injection
 
 - Dagger (general DI)
 - Butterknife (view DI)
 
-# JSON to POJO mapping
+## JSON to POJO mapping
 
 - GSON
 
-# API Clients
+## API Clients
 
 - Retrofit
 
-# HTTP Client
+## HTTP Client
 
 - OkHttp
 
-# Dynamic Image Loading
+## Dynamic Image Loading
 
 - Picasso
 
-# ORM
+## ORM
 
 - Room
 - GreenDAO
