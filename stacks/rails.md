@@ -80,5 +80,6 @@ Development for Ruby.
 - [Fontawesome Rails](https://github.com/bokmann/font-awesome-rails) More Icon Fonts (you will just want one of these font libs)
 - [Foundation Rails](https://rubygems.org/gems/foundation-rails) CSS Framework
 - [Twitter Bootstrap](https://github.com/seyhunak/twitter-bootstrap-rails) Twitter Bootstrap for Rails
+  - [Admin LTE 2](https://github.com/nicolas-besnard/adminlte2-rails) Premium Theme for Backends
 
 Please also look at our [Rails extended architecture](/rails) guides.
