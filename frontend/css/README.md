@@ -4,12 +4,12 @@
 
   - Selectors
     - HTML vs. id vs. class
-    - (Specificity)[https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity]
+    - [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
     - Additional selectors
   - Styling
     - Typography
     - Units
-      - px vs. rem vs. em - [Understanding sizing](https://www.smashingmagazine.com/2018/01/understanding-sizing-css-layout/)
+      - [px vs. rem vs. em - Understanding sizing](https://www.smashingmagazine.com/2018/01/understanding-sizing-css-layout/)
   - Layouting
     - Boxmodel
       - Margins and paddings
