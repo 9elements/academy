@@ -13,7 +13,7 @@
   - Layouting
     - Boxmodel
       - Margins and paddings
-      - Different Box Models
+      - [Different Box Models](https://medium.freecodecamp.org/css-box-model-explained-by-living-in-a-boring-suburban-neighborhood-9a9e692773c1)
     - Floats vs. Flex vs. CSS Grids
     - Radius and Shadows
   - Responsive
