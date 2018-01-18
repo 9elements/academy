@@ -4,6 +4,7 @@
 
   - Selectors
     - HTML vs. id vs. class
+    - (Specificity)[https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity]
     - Additional selectors
   - Styling
     - Typography
