@@ -8,7 +8,7 @@
   - Styling
     - Typography
     - Units
-      - px vs. rem vs. em
+      - px vs. rem vs. em - [Understanding sizing](https://www.smashingmagazine.com/2018/01/understanding-sizing-css-layout/)
   - Layouting
     - Boxmodel
       - Margins and paddings
