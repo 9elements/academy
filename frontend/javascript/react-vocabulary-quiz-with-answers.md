@@ -35,6 +35,8 @@ class ColorPicker extends Component {
 }
 ```
 
+Protip: Synonyme für _Attribute_ eines Objects sind auch der englische Begriff _Property_ oder _Key_.
+
 3. Lege in der folgenden _Klasse_ eine _statische Klassenvariable_ `propTypes` an. `propTypes` soll ein _Objekt_ sein.
 
 ```js
