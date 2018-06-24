@@ -7,7 +7,7 @@ In diesem kleinen Quiz versuchen wir das bewusstsein für eine Terminologie zu s
 ```js
 class ColorPicker extends Component {
   state = {
-  }
+  };
 }
 ```
 
@@ -19,8 +19,8 @@ class ColorPicker extends Component {
     super(props);
 
     this.state = {
-    }
-  }
+    };
+  };
 }
 ```
 
@@ -31,7 +31,7 @@ class ColorPicker extends Component {
   state = {
     scrollLeft: 0,
     toScrollLeft: 0
-  }
+  };
 }
 ```
 
@@ -40,7 +40,7 @@ class ColorPicker extends Component {
 ```js
 class ColorPicker extends Component {
   propTypes = {
-  }
+  };
 }
 ```
 
@@ -51,7 +51,7 @@ import PropTypes from 'prop-types';
 
 class ColorPicker extends Component {
   propTypes = {
-  }
+  };
 }
 ```
 
@@ -63,7 +63,7 @@ import PropTypes from 'prop-types';
 class ColorPicker extends Component {
   propTypes = {
     index: PropTypes.number.isRequired
-  }
+  };
 }
 ```
 
@@ -77,11 +77,11 @@ class ColorPicker extends Component {
   state = {
     scrollLeft: 0,
     toScrollLeft: 0
-  }
+  };
 
   propTypes = {
     index: PropTypes.number.isRequired
-  }
+  };
 
   render() {
   }
@@ -99,18 +99,18 @@ class ColorPicker extends Component {
   state = {
     scrollLeft: 0,
     toScrollLeft: 0
-  }
+  };
 
   propTypes = {
     index: PropTypes.number.isRequired
-  }
+  };
 
   render() {
     return (
       <div>
         Hello World
       </div>
-    )
+    );
   }
 }
 ```
@@ -124,21 +124,21 @@ class ColorPicker extends Component {
   state = {
     scrollLeft: 0,
     toScrollLeft: 0
-  }
+  };
 
   propTypes = {
     index: PropTypes.number.isRequired
-  }
+  };
 
   handleClick = (event) => {
-  }
+  };
 
   render() {
     return (
       <div onClick={this.handleClick}>
         Hello World
       </div>
-    )
+    );
   }
 }
 ```
