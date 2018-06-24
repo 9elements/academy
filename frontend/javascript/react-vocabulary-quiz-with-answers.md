@@ -157,3 +157,12 @@ Um das Problem zu umgehen. Greifen die meisten Entwickler bei der Callback Defin
 ```
 
 Das hat aber den entscheidenen Nachteil, dass jedes mal wenn die `render` Funktion aufgerufen wird ein neuer Clickhandler generiert wird. Bei sehr häufigen Aufrufen führt das zu einer schlechten Performance. Generell gilt bei React: Eine Komponente sollte bei gleichen `props` und `state` stets dieselbe Ausgabe rendern. Zwar unterscheidet sich die Ausgabe des DOMs hier visuell nicht, aber der Clickhandler ist bei jedem `render` eine andere Funktion.
+
+Nehmen wir unsere Lösung noch mal unter die Lupe:
+
+```js
+handleClick = (event) => {
+};
+```
+
+Es handelt sich um eine Instanzvariable die einer Phat-Arrow-Funktion (mit automatischen binding an `this`) zugewieden wird.
