@@ -11,7 +11,7 @@ class ColorPicker extends Component {
 }
 ```
 
-Diese Schreibweise gehört noch nicht offiziell zum EcamScript Standard, allerdings ist davon auszugehen, dass das in Zukunft der Fall sein wird. Es gibt noch die Alternative den `state` im Konstruktor zu setzen. Diese Schreibweise ist dadurch etwas abwärtskompatibler (ES6), aber nicht empfehlenswert.
+Diese Schreibweise gehört noch nicht offiziell zum EcmaScript Standard, allerdings ist davon auszugehen, dass das in Zukunft der Fall sein wird. Es gibt noch die Alternative den `state` im Konstruktor zu setzen. Diese Schreibweise ist dadurch etwas abwärtskompatibler (genauer ab ES6/2016), aber nicht empfehlenswert.
 
 ```js
 class ColorPicker extends Component {
