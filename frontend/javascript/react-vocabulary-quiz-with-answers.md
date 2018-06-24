@@ -90,7 +90,7 @@ class ColorPicker extends Component {
 
 ProTip: In einer funktionalen Programmiersprache spricht man trotz des Objektorientierten Ansatzes von Klassen von _Funktionen_ anstatt von _Methoden_. Es kann trotzdem sein, dass der ein oder andere Entwickler in diesem Fall Funktionen trotzdem als Methoden bezeichnet.
 
-7. Die Render Funktion soll ein <div> _zurückgeben_, in dem zunächst "Hello World" stehen soll
+7. Die Render Funktion soll ein `<div>` _zurückgeben_, in dem zunächst "Hello World" stehen soll
 
 ```js
 import PropTypes from 'prop-types';
@@ -115,7 +115,7 @@ class ColorPicker extends Component {
 }
 ```
 
-8. Füge dem <div> eine _onClick Handler_ hinzu und lege den entsprechenden _Callback_ in der _Klasse_ an
+8. Füge dem `<div>` eine _onClick Handler_ hinzu und lege den entsprechenden _Callback_ in der _Klasse_ an
 
 ```js
 import PropTypes from 'prop-types';
