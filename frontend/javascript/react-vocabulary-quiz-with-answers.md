@@ -11,7 +11,7 @@ class ColorPicker extends Component {
 }
 ```
 
-Diese Schreibweise gehört noch nicht offiziell zum EcmaScript Standard, allerdings ist davon auszugehen, dass das in Zukunft der Fall sein wird. Es gibt noch die Alternative den `state` im Konstruktor zu setzen. Diese Schreibweise ist dadurch etwas abwärtskompatibler (genauer ab ES6/2016), aber nicht empfehlenswert.
+Diese Schreibweise gehört noch nicht offiziell zum EcmaScript Standard, allerdings ist davon auszugehen, dass das in Zukunft der Fall sein wird. Es gibt noch die Alternative den `state` im Konstruktor zu setzen. Diese Schreibweise ist dadurch etwas abwärtskompatibler (genauer ab ES6/2016), aber nicht empfehlenswert:
 
 ```js
 class ColorPicker extends Component {
@@ -143,3 +143,17 @@ class ColorPicker extends Component {
 }
 ```
 
+Es gibt noch mehrere Methoden den Callback zu definieren. Man kann den Callback auch als reguläre Funktion innerhalb der Klasse definieren, allerdings hat ist `this` in diesem Fall nicht definiert.
+
+```js
+handleClick() {
+};
+```
+
+Um das Problem zu umgehen. Greifen die meisten Entwickler bei der Callback Definition zur folgenden Lösung:
+
+```js
+<div onClick={this.handleClick.bind(this)}>
+```
+
+Das hat aber den entscheidenen Nachteil, dass jedes mal wenn die `render` Funktion aufgerufen wird ein neuer Clickhandler generiert wird. Bei sehr häufigen Aufrufen führt das zu einer schlechten Performance. Generell gilt bei React: Eine Komponente sollte bei gleichen `props` und `state` stets dieselbe Ausgabe rendern. Zwar unterscheidet sich die Ausgabe des DOMs hier visuell nicht, aber der Clickhandler ist bei jedem `render` eine andere Funktion.
