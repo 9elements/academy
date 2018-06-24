@@ -2,7 +2,7 @@
 
 In diesem kleinen Quiz versuchen wir das bewusstsein für eine Terminologie zu schärfen, damit sich unsere Entwickler auf einem hohen Niveau unterhalten können.
 
-1. Lege in der folgenden _Klasse_ eine _Instanzvariable_ `state` als Objekt an.
+1. Lege in der folgenden _Klasse_ eine _Instanzvariable_ `state` als _Objekt_ an.
 
 ```js
 class ColorPicker extends Component {
@@ -11,7 +11,7 @@ class ColorPicker extends Component {
 }
 ```
 
-Es gibt noch die Alternative den `state` im Konstruktor zu setzen.
+Diese Schreibweise gehört noch nicht offiziell zum EcamScript Standard, allerdings ist davon auszugehen, dass das in Zukunft der Fall sein wird. Es gibt noch die Alternative den `state` im Konstruktor zu setzen. Diese Schreibweise ist dadurch etwas abwärtskompatibler (ES6), aber nicht empfehlenswert.
 
 ```js
 class ColorPicker extends Component {
@@ -24,7 +24,7 @@ class ColorPicker extends Component {
 }
 ```
 
-## `state` soll ein Objekt sein, in der zwei es zwei Attribute `scrollLeft` und `toScrollLeft` gibt. Beide Werte sollen mit 0 vorinitialisiert werden.
+2. `state` soll ein _Objekt_ sein, in der zwei es zwei _Attribute_ `scrollLeft` und `toScrollLeft` gibt. Beide Werte sollen mit 0 _vorinitialisiert_ werden.
 
 ```js
 class ColorPicker extends Component {
@@ -35,7 +35,7 @@ class ColorPicker extends Component {
 }
 ```
 
-## Lege in der folgenden Klasse eine statische Klassenvariable `propTypes` an. `propTypes` soll ein Objekt sein.
+3. Lege in der folgenden _Klasse_ eine _statische Klassenvariable_ `propTypes` an. `propTypes` soll ein _Objekt_ sein.
 
 ```js
 class ColorPicker extends Component {
@@ -44,22 +44,22 @@ class ColorPicker extends Component {
 }
 ```
 
-## Importiere das Modul PropTypes
-
-import PropTypes from 'prop-types';
+4. _Importiere_ das _Modul_ PropTypes
 
 ```js
+import PropTypes from 'prop-types';
+
 class ColorPicker extends Component {
   propTypes = {
   }
 }
 ```
 
-## Gibt der Klassenvariable 'prop-types' ein Attribut `index`. Das Attribut soll eine Zahl und nicht optional sein.
-
-import PropTypes from 'prop-types';
+5. Gibt der Klassenvariable 'prop-types' ein Attribut `index`. Das Attribut soll eine Zahl und nicht optional sein.
 
 ```js
+import PropTypes from 'prop-types';
+
 class ColorPicker extends Component {
   propTypes = {
     index: PropTypes.number.isRequired
@@ -67,10 +67,13 @@ class ColorPicker extends Component {
 }
 ```
 
-## Spendiere der Klasse eine render Funktion
+6. Spendiere der _Klasse_ eine render _Funktion_
 
 ```js
+import PropTypes from 'prop-types';
+
 class ColorPicker extends Component {
+
   state = {
     scrollLeft: 0,
     toScrollLeft: 0
@@ -85,11 +88,13 @@ class ColorPicker extends Component {
 }
 ```
 
-ProTip: In einer funktionalen Programmiersprache spricht man trotz des Objektorientierten Ansatzes von Klassen von Funktionen anstatt von Methoden. Es kann trotzdem sein, dass der ein oder andere Entwickler in diesem Fall Funktionen trotzdem als Methoden bezeichnet.
+ProTip: In einer funktionalen Programmiersprache spricht man trotz des Objektorientierten Ansatzes von Klassen von _Funktionen_ anstatt von _Methoden_. Es kann trotzdem sein, dass der ein oder andere Entwickler in diesem Fall Funktionen trotzdem als Methoden bezeichnet.
 
-## Die Render Funktion soll ein <div> zurückgeben, in dem zunächst "Hello World" stehen soll
+7. Die Render Funktion soll ein <div> _zurückgeben_, in dem zunächst "Hello World" stehen soll
 
 ```js
+import PropTypes from 'prop-types';
+
 class ColorPicker extends Component {
   state = {
     scrollLeft: 0,
@@ -110,9 +115,11 @@ class ColorPicker extends Component {
 }
 ```
 
-## Füge dem <div> eine onClick Handler hinzu und lege den entsprechenden Callback in der Klasse an
+8. Füge dem <div> eine _onClick Handler_ hinzu und lege den entsprechenden _Callback_ in der _Klasse_ an
 
 ```js
+import PropTypes from 'prop-types';
+
 class ColorPicker extends Component {
   state = {
     scrollLeft: 0,
