@@ -2,7 +2,7 @@
 
 In diesem kleinen Quiz versuchen wir das bewusstsein für eine Terminologie zu schärfen, damit sich unsere Entwickler auf einem hohen Niveau unterhalten können.
 
-## Lege in der folgenden Klasse eine Instanzvariable `state` als Objekt an.
+1. Lege in der folgenden _Klasse_ eine _Instanzvariable_ `state` als Objekt an.
 
 ```js
 class ColorPicker extends Component {
