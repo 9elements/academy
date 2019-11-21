@@ -1,5 +1,5 @@
-test
+<span style="color:blue">test</span>
 
 ```ruby
-<span style="color:blue">class PaymentController < ApplicationController</span>
+class PaymentController < ApplicationController
 ```
